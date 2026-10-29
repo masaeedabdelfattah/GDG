@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<style>
+    h3 {
+        font-size: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #1a6b7c;
+    }
+
+    a {
+        color: rgb(31, 214, 220);
+    }
+
+    p {
+        font-weight: 100;
+    }
+
+    img {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    thead {
+        background-color: #145c80;
+        color: white;
+        height: 10px;
+    }
+
+    th,
+    td {
+        border: 1px solid #999;
+        padding: 8px;
+        vertical-align: middle;
+    }
+
+    fieldset {
+        border: 1px solid #999;
+        margin: 0 0 20px;
+        padding: 12px 16px;
+        width: 50%;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .col {
+        display: grid;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .row.top {
+        align-items: start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+        width: 50%;
+        padding: 4px;
+    }
+
+    .options label {
+        display: block;
+    }
+
+    .buttons button {
+        color: #fff;
+        border: 1px solid #333;
+        padding: 6px 14px;
+        cursor: pointer;
+    }
+
+    #send {
+        background: #2a7f91;
+    }
+
+    #clear {
+        background: #7a1010;
+    }
+</style>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1 align="center" style="font-size: 32px;">John Doe Portfolio</h1>
+            <h2 align="center" style="font-size: 20px;">Professional Web Developer</h2>
+            <h3 ">About Me</h3>
+            <p>Hello! I'm John, a web developer with about 1 year of experience. I work with HTML5 and CSS3, enjoy
+                Hello!
+                I'm John, a web developer v my JavaScript fundamentals to add interactivity. I'm enger 3, enjoy using
+                Bootstrap to speed up Ul work, and am building eranto user-friendly interf My journey in web development
+                started during my college years, and since then I've been continuously learning and adapting to new
+                technologies. I believe in writing clean, efficient code and creating user-friendly interfaces.</p>
+        </section>
+
+        <section>
+            <h3 style=" background-color: #aecace; color: #000;;">Skills</h3>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">React.JS</a></li>
+                <li><a href="#">Angular</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Experience Timeline</h3>
+            <p align="center">Professional Experience Overview</p>
+            <table border="1" cellspacing="0px" cellpadding="5px" width="100%">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Logo</th>
+                        <th>Role</th>
+                        <th>Key Achievements</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">TechCorp Solutions</td>
+                        <td rowspan="2"><img src="IMAGES/logo1.png" alt="">
+                        </td>
+                        <td>Senior Full Stack Developer</td>
+                        <td>
+                            <ul>
+                                <li>Lead development of scalable applications</li>
+                                <li>Mentor junior developers and ensure code quality</li>
+                                <li>Architect scalable backend services</li>
+                            </ul>
+                        </td>
+                        <td>Jan 2023 – Present</td>
+                    </tr>
+                    <tr>
+
+                        <td> Full Stack Developer</td>
+                        <td>
+                            <ul>
+                                <li>Lead development of web applications</li>
+                                <li>Mentor peers and improve collaboration</li>
+                                <li>Enhanced performance and reliability</li>
+                            </ul>
+                        </td>
+                        <td>2021 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Agency Pro</td>
+                        <td><img src="IMAGES/logo2.svg" alt=""></td>
+                        <td>Frontend Developer</td>
+                        <td>
+                            <ul>
+                                <li>Built user interfaces from mockups</li>
+                                <li>Implemented responsive designs</li>
+                                <li>Conducted code reviews</li>
+                            </ul>
+                        </td>
+                        <td>2019 – 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Web Design Studio</td>
+                        <td><img src="IMAGES/logo3.png" alt=""></td>
+                        <td>Junior Web Developer</td>
+                        <td>
+                            <ul>
+                                <li>Maintained existing websites</li>
+                                <li>Fixed bugs and implemented features</li>
+                                <li>Learned best practices</li>
+                            </ul>
+                        </td>
+                        <td>2019 – 2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Total Experience: 5+ yours in web development</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+
+        <section>
+            <h3>Contact Me</h3>
+            <p>Feel free to reach out to me using the form below. I’d love to hear from you!</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="row">
+                        <label for="first">First Name: *</label>
+                        <input type="text" id="first" name="first" required>
+                    </div>
+                    <div class="row">
+                        <label for="last">Last Name: *</label>
+                        <input type="text" id="last" name="last" required>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email Address: *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="row">
+                        <label for="date">Preferred Meeting Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="row">
+                        <label for="time">Best Time to Contact:</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <div class="row">
+                        <label for="type">Project Type: *</label>
+                        <input type="text" id="type" name="type" required>
+                    </div>
+                    <div class="row top">
+                        <label for="desc">Project Description: *</label>
+                        <textarea id="desc" name="desc" rows="1" required></textarea>
+                    </div>
+
+                    <div class="col top">
+                        <span id="budget-label">Budget Range:</span>
+                        <div class="options" role="radiogroup" aria-labelledby="budget-label">
+                            <label><input type="radio" name="budget" value="under-5k"> Under $5,000</label>
+                            <label><input type="radio" name="budget" value="5-10k"> $5,000 – $10,000</label>
+                            <label><input type="radio" name="budget" value="10-25k"> $10,000 – $25,000</label>
+                            <label><input type="radio" name="budget" value="over-25k"> Over $25,000</label>
+                        </div>
+                    </div>
+
+                    <div class="col top">
+                        <span id="services-label">Services Required (check all that apply):</span>
+                        <div class="options" role="group" aria-labelledby="services-label">
+                            <label><input type="checkbox" name="services" value="ui-ux"> UI/UX Design</label>
+                            <label><input type="checkbox" name="services" value="frontend"> Frontend Development</label>
+                            <label><input type="checkbox" name="services" value="backend"> Backend Development</label>
+                            <label><input type="checkbox" name="services" value="hosting"> Hosting &amp;
+                                Deployment</label>
+                            <label><input type="checkbox" name="services" value="support"> Maintenance &amp;
+                                Support</label>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label for="source">How did you hear about me?</label>
+                        <select id="source" name="source">
+                            <option value="">-- select source --</option>
+                            <option>Search engine</option>
+                            <option>Social media</option>
+                            <option>Referral</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit" id="send">Send Message</button>
+                    <button type="reset" id="clear">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+
